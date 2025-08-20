@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تم تأكيد الحساب | ShopiQ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* تعريف متغيرات CSS لتسهيل التعديل والصيانة (مبدأ DRY) */
+    :root {
+      --primary-color: #7c3aed;
+      --text-color: #444;
+      --heading-color: #111;
+      --bg-color: #f7f7fb;
+      --card-bg-color: #fff;
+      --card-shadow: 0 6px 30px rgba(0,0,0,.08);
+      --border-radius: 14px;
+    }
+    
+    body {
+      font-family: 'Cairo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg-color);
+      margin: 0;
+    }
+
+    .card {
+      max-width: 520px;
+      margin: 8vh auto;
+      padding: 24px;
+      background: var(--card-bg-color);
+      border-radius: var(--border-radius);
+      box-shadow: var(--card-shadow);
+      text-align: center; /* توسيط المحتوى داخل البطاقة */
+    }
+
+    h1 {
+      margin-top: 0;
+      color: var(--heading-color);
+    }
+    
+    p {
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* تحسين تصميم الزر */
+    .btn {
+      display: inline-block;
+      padding: 14px 24px; /* زيادة الحجم */
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .btn.primary {
+      background: var(--primary-color);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+    }
+    
+    .btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(124, 58, 237, 0.5);
+    }
+
+    .muted {
+      color: #666;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+
+    .code {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      background: #f2f2f8;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://path.to.your.logo/shopiq_logo.png" alt="ShopiQ Logo" style="max-width: 120px; margin-bottom: 24px;">
+
+    <h1>تم تأكيد الحساب ✅</h1>
+    <p>شكراً لك! تم تفعيل حسابك بنجاح على <strong>ShopiQ</strong>.</p>
+    <p>يمكنك الآن العودة للتطبيق والمتابعة.</p>
+    <p>
+      <a class="btn primary" href="io.shopiq.app://auth-callback">العودة للتطبيق</a>
+    </p>
+    <p class="muted">
+      لو لم يفتح التطبيق تلقائيًا، يمكنك إغلاق هذه الصفحة وفتح التطبيق يدويًا.
+    </p>
+    <p class="muted">
+      ملاحظة تقنية: تم معاملة هذا الطلب عن طريق Supabase GoTrue. قد ترى معلمات مثل
+      <span class="code">type=signup</span> في الرابط—تجاهلها.
+    </p>
+  </div>
+</body>
+</html>
